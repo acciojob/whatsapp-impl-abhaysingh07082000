@@ -4,7 +4,10 @@ public class User {
     private String name;
     private String mobile;
 
+public User()
+{
 
+}
     public User(String name, String mobile) {
         this.name = name;
         this.mobile = mobile;

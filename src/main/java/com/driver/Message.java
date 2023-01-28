@@ -1,5 +1,6 @@
 package com.driver;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class Message {
@@ -7,10 +8,14 @@ public class Message {
     private String content;
     private Date timestamp;
 
-    public Message(int id, String content, Date timestamp) {
+    public Message()
+    {
+
+    }
+    public Message(int id, String content) {
         this.id = id;
         this.content = content;
-        this.timestamp = timestamp;
+        this.timestamp = new Date();
     }
 
     public int getId() {
